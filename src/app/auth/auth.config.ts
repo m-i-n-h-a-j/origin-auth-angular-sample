@@ -2,7 +2,8 @@ import { PassedInitialConfig } from 'angular-auth-oidc-client';
 
 export const authConfig: PassedInitialConfig = {
   config: {
-    authority: 'https://localhost:7181',
+    // authority: 'https://localhost:7181',
+    authority: 'https://origin-identity.onrender.com',
     redirectUrl: window.location.origin + '/auth/callback',
     postLogoutRedirectUri: window.location.origin,
     clientId: 'angular-spa',
